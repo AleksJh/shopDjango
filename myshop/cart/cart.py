@@ -36,7 +36,7 @@ class Cart:
             self.save()
 
     def __iter__(self):
-        """"""
+        """Loads the products from db."""
         product_ids = self.cart.keys()
         products = Product.objects.filter(id__in=product_ids)
         cart = self.cart.copy()
