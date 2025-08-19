@@ -334,14 +334,14 @@ flake8 = ">=3.0,<3.2.0 || >3.2.0"
 
 [[package]]
 name = "flower"
-version = "1.2.0"
+version = "1.1.0"
 description = "Celery Flower"
 optional = false
 python-versions = "*"
 groups = ["main"]
 files = [
-    {file = "flower-1.2.0-py2.py3-none-any.whl", hash = "sha256:ae2977cf7343c526cf44def8c7e7173db8dedb8249b91ba4b88cfd18e7a2d486"},
-    {file = "flower-1.2.0.tar.gz", hash = "sha256:46493c7e8d9ca2167e8a46eb97ae8d280997cb40a81993230124d74f0fe40bac"},
+    {file = "flower-1.1.0-py2.py3-none-any.whl", hash = "sha256:77be4bece7330893703e8cca3f3baddba356a0019186594a961e3968289da7ec"},
+    {file = "flower-1.1.0.tar.gz", hash = "sha256:f920ca2902d7539fc180ab15e51f1d918355e5cc23da854ff9d59c6e5a1725b6"},
 ]
 
 [package.dependencies]
@@ -749,4 +749,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10, <3.11"
-content-hash = "b247e63f3ac18b6098f45c16841ea5836e542a3dd83d1fb02702a53a4e1e3866"
+content-hash = "9bb1d59f73b289e6520ccc83c595f611ee9eaf7fabae18433fda3d9ef41f6d47"
