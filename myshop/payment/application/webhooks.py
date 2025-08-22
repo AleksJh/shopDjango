@@ -29,6 +29,9 @@ def stripe_webhook(request):
             except Order.DoesNotExist:
                 return HttpResponse(status=404)
             order.paid = True
+            order.stripe_id = session.payment_intent
             order.save()
+            # Run async task
+            # FIX: payment_completed.delay(order.id)
 
     return HttpResponse(status=200)
