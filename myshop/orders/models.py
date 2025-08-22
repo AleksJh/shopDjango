@@ -1,7 +1,7 @@
 from django.db import models
+from shop.models import Product
 
 from myshop import settings
-from shop.models import Product
 
 
 class Order(models.Model):
@@ -29,12 +29,13 @@ class Order(models.Model):
     def get_stripe_url(self):
         if not self.stripe_id:
             # No associated payments
-            return ''
-        if '_test_' in settings.STRIPE_SECRET_KEY:
-            path = '/test/'
+            return ""
+        if "_test_" in settings.STRIPE_SECRET_KEY:
+            path = "/test/"
         else:
-            path = '/'
-        return f'https://dashboard.stripe.com{path}payments/{self.stripe_id}'
+            path = "/"
+        return f"https://dashboard.stripe.com{path}payments/{self.stripe_id}"
+
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, related_name="items", on_delete=models.CASCADE)
