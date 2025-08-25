@@ -15,7 +15,8 @@ dependencies = [
     "flower (==1.2.0)",
     "celery (==5.2.7)",
     "stripe (==4.0.2)",
-    "dotenv (>=0.9.9,<0.10.0)"
+    "dotenv (>=0.9.9,<0.10.0)",
+    "weasyprint (==56.1)"
 ]
 
 [tool.poetry]
